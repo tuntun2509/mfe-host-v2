@@ -2,11 +2,11 @@
   "name": "host",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production --config webpack.prod.js",
+    "build:dev": "webpack --mode development --config webpack.dev.js",
     "build:start": "cd dist && npx serve",
-    "start": "webpack serve --mode development",
-    "start:live": "webpack serve --mode development --live-reload --hot"
+    "start": "webpack serve --mode development --config webpack.dev.js",
+    "start:live": "webpack serve --mode development --config webpack.dev.js --live-reload --hot"
   },
   "license": "MIT",
   "author": {
